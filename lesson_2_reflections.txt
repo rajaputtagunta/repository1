@@ -2,3 +2,13 @@ What happens when you initialize a repository? Why do you need to do it?
 When you initialize a repository, a .git folder is created and it holds all the metadata that keeps track of the various versions of the repository.
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 A working directory contains your last commit version and any changes you have made since. A staging area lets you choose files to be included as part of next commit. Even when you have changed a lot of files, you can only include some of them to be part of your next commit. Staging area lets you do that. A repository consists of all versions of your files.
+How can you use the staging area to make sure you have one commit per logical change?
+The staging area lets you choose files that you want to be part of your next commit. So, even though there are a lot of files that have been changed in the working directory since the last commit, only files that you add to the staging area will be included in the commit thus letting you have one commit per logical change.
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+If you want to use your current branch as a base to create an entirely new project, branches would be useful. If you want to make some experimental changes that you are not sure would work, you would create a branch ,so that you still have the master with the working version. Branches would help you pursue new ideas without fear of breaking the existing functionality. They will also let you create several projects that go in different directions, but based on the same base code. One example would be the unix kernel.
+How do the diagrams help you visualize the branch structure?
+It helps you visualize when the branch was cut and what changes were made to the master before the branch was merged, the number of branches that are still on their own and what changes were brought into the master from the merged branches etc.
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+Merging two branches merges commits from both branches if there are no conflicts. If there are conflicts, they need to be resolved before they can be merged. The representation in the diagram helps us understand that the commits from both branches can still be accessed from the new head after the commit.
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+You may not always want to merge two branches and so manual merge is good.
