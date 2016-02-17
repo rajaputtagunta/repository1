@@ -1,0 +1,4 @@
+What happens when you initialize a repository? Why do you need to do it?
+When you initialize a repository, a .git folder is created and it holds all the metadata that keeps track of the various versions of the repository.
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+A working directory contains your last commit version and any changes you have made since. A staging area lets you choose files to be included as part of next commit. Even when you have changed a lot of files, you can only include some of them to be part of your next commit. Staging area lets you do that. A repository consists of all versions of your files.
